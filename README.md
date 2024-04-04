@@ -1,14 +1,15 @@
 # 할 일 앱 만들기
 
 ## 리액트 프로젝트 세팅
+
 - npm으로 설치 한 경우 yarn add 대신에 npm i(nstall)
-- `yarn create react-app ./`         (`npx create-react-app ./`)
-- `yarn add normalize.css`           (`npm i normalize.css`)
-- `yarn add sass`                    (`npm i sass`)
-- `yarn add classnames react-icons`  (`npm i classnames react-icons`)
+- `yarn create react-app ./` (`npx create-react-app ./`)
+- `yarn add normalize.css` (`npm i normalize.css`)
+- `yarn add sass` (`npm i sass`)
+- `yarn add classnames react-icons` (`npm i classnames react-icons`)
 
 ## ESLint, prettier 설정
-- ./ (제일 상위폴더)
+
 - ./.prettierrc.json (.prettierrc.json 폴더생성)
 
 ```json
@@ -24,13 +25,15 @@
 }
 ```
 
-- `yarn add eslint --dev`         (`npm i eslint --dev`)
-- `yarn eslint --init`            (`npx eslint --init`)
+- `yarn add eslint --dev` (`npm i eslint --dev`)
+- `yarn eslint --init` (`npx eslint --init`)
 - `yarn add eslint-config-prettier --save-dev`
- (`npm install eslint-config-prettier --save-dev`)
+  (`npm install eslint-config-prettier --save-dev`)
 -
+
 - json (.eslintrc.js)
-```json (.eslintrc.js)
+
+```json
 "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
@@ -40,13 +43,14 @@
 
 
     rules: {
-  "react/react-in-jsx-scope": "off",
-  "react/prop-types": "off",
-  "no-unused-vars": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "no-unused-vars": "off",
 },
 ```
 
 - css (index.css)
+
 ```css
 * {
   margin: 0;
@@ -80,4 +84,4 @@ body {
 ```
 
 - `yarn add @babel/plugin-proposal-private-property-in-object --dev`
-  (`npm install @babel/plugin-proposal-private-property-in-object --dev`)
+- (`npm install @babel/plugin-proposal-private-property-in-object --dev`)
